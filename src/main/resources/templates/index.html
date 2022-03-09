@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency</title>
+</head>
+<body>
+<h2>Please enter a base currency and the exchange rates you want:</h2>
+<form action="#" th:action="@{/exchange}" method="post">
+    <p>Amount: <input type="text" th:name="amount" /></p>
+    <p>Base currency: <input type="text" th:name="base_currency" /></p>
+    <p>Convert to: <input type="text" th:name="currencies" /></p>
+    <p><input type="submit" value="Submit" />
+</form>
+</body>
+</html>

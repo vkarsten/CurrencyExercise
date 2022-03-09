@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency exchange</title>
+</head>
+<body>
+<h2>Converting <span th:text="${amount}"></span> <span th:text="${base}"></span>: </h2>
+<tr th:each="rate: ${rates}">
+    <td th:text="${rate.getKey()}"/>
+    <td th:text="${rate.getValue()}"/>
+</tr><br>
+<a href="/">Back to main page</a>
+</body>
+</html>
